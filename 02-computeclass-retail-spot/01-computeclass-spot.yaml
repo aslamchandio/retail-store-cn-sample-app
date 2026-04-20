@@ -1,0 +1,27 @@
+apiVersion: cloud.google.com/v1
+kind: ComputeClass
+metadata:
+  name: retail-cc-spot
+spec:
+  priorityDefaults:
+    location:
+      zones: [ 'us-west1-a', 'us-west1-b', 'us-west1-c' ]
+  priorities:
+  - machineFamily: n2
+    spot: true
+    storage:
+      bootDiskType: pd-balanced
+      bootDiskSize: 50
+  - machineFamily: n4
+    spot: true
+    storage:
+      bootDiskType: pd-balanced
+      bootDiskSize: 50
+
+  activeMigration:
+    optimizeRulePriority: true
+  nodePoolAutoCreation:
+    enabled: true
+  autoscalingPolicy:
+    consolidationDelayMinutes: 1
+  whenUnsatisfiable: DoNotScaleUp
