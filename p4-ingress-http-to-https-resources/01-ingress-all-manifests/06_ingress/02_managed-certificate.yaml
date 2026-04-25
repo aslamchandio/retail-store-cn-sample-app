@@ -1,0 +1,13 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: it-prod-web-ssl-certificate
+spec:
+  domains:
+  - retail.techscloud.store
+
+# kubectl get ingress
+# kubectl describe ingress ingress-ssl
+# kubectl get managedcertificate
+# kubectl describe managedcertificate managed-cert-for-ingress
+# gcloud compute ssl-certificates list
