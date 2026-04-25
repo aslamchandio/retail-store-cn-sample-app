@@ -143,6 +143,21 @@ By building this project, I explored:
 
 ---
 
+## Changes You Need into your Project
+
+### Project1 -p1
+
+gcp_project_id = "abcd1234"
+
+### Project1 -p2
+
+master_authorized_ip_range = "30.11.1.1/32" ## Your Public IP
+
+gcp_project_id = "abcd1234"
+
+
+---
+
 ## Configurations
 
 kubectl get namespaces --show-labels
