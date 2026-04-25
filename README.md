@@ -3,6 +3,8 @@
 A production-style, cloud-native **Retail Store Sample Application** deployed on **Google Kubernetes Engine (GKE)**.  
 This project demonstrates a real-world **microservices architecture**, Kubernetes best practices, and scalable cloud deployment patterns.
 
+Excited to share my latest project where I designed and deployed a production-ready microservices architecture on Google Kubernetes Engine (GKE) using Terraform 🚀
+
 ---
 
 ## 🧩 Architecture Overview
