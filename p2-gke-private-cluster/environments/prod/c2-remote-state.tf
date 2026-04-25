@@ -2,7 +2,7 @@
 data "terraform_remote_state" "vpc" {
   backend = "gcs"
   config = {
-    bucket = "aslam-tf-bucket"
+    bucket = "my-tf-bucket"
     prefix = "prod/vpc-fw-vm-natgtw-sql-sm-cidr-project"
   }
 }

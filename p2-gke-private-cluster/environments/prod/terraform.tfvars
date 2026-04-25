@@ -1,4 +1,4 @@
-gcp_project_id = "terraform-project-588321"
+gcp_project_id = "abcd1234"
 
 gcp_region_1 = "us-central1"
 
